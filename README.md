@@ -1,7 +1,7 @@
 # Pascal architecture GPGPU Benchmark Analysis Results
 
 <p align="center">
-<img src="./img/GTX_1080_-_ GPGPU_Benchmark_analysis.jpeg">
+<img src="./img/PASCAL_GROUPS.jpeg">
 </p>
 
 ## Used libs and languages
