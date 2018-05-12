@@ -1,165 +1,165 @@
-nicknames;application/kernel;Num. of Registers;sm_efficiency(Avg)%;achieved_occupancy(Avg);total_global_transactions;shared_total_transactions;total_local_transactions;inst_fp_32(Avg);inst_fp_64(Avg);inst_integer(Avg);time_percentage
-P_A1;bfs  BFS_kernel_multi_blk_inGPUint*, int*, int2*, int2*, int*, int*, int*, int*, int, int, int*, int*, int*, int*;30;49.97;0.249998;3377073;1392173;0;0;0;111201540;60.048016
-P_A2;bfs  BFS_in_GPU_kernelint*, int*, int2*, int2*, int*, int*, int, int*, int, int, int*;28;3.56;0.249997;263376;135020;0;0;0;11545862;39.951984
-P_B1;cutcp  cuda_cutoff_potential_lattice6overlapint, int, float4*, float, float, float, float*, int;25;93.55;0.820161;1854944;13833601;0;3656355477;0;246538939;100
-P_C1;histo  histo_prescan_kernelunsigned int*, int, unsigned int*;17;62.87;0.527797;76944;9472;0;1338816;0;2899648;4.7826896
-P_C2;histo  histo_main_kerneluchar4*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int*, unsigned int*, unsigned int*;19;92.58;0.591051;1618272;375894;0;0;0;77404416;54.6465
-P_C3;histo  histo_final_kernelunsigned int, unsigned int, unsigned int, unsigned int, unsigned int*, unsigned int*, unsigned int*, unsigned int*;32;86.64;0.350718;311296;0;0;0;0;11341824;19.621044
-P_C4;histo  histo_intermediates_kerneluint2*, unsigned int, unsigned int, unsigned int, uchar4*;16;85.88;0.567422;348920;0;0;0;0;28420860;20.949768
-P_D1;lbm  performStreamCollide_kernelfloat*, float*;40;99.52;0.615658;16650000;0;0;302788344;0;132322731;100
-P_E1;mri-gridding  reorder_kernelint, unsigned int*, ReconstructionSample*, sampleArrayStruct;14;99.15;0.942877;17198877;0;0;0;0;61087314;1.5220302
-P_E2;mri-gridding  splitRearrangeint, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*;30;90.7;0.795664;4197770;10315022;52346;0;0;400964940;6.480968
-P_E4;mri-gridding  uniformAddunsigned int, unsigned int*, unsigned int*;8;47.88;0.412678;802134;68755;0;0;0;17076188;0.90532804
-P_E6;mri-gridding  binning_kernelunsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int;9;99.61;0.832192;8384433;0;0;0;0;84976658;2.8125155
-P_E7;mri-gridding  gridding_GPUsampleArrayStruct, unsigned int*, float2*, float*, float;43;99.9;0.591485;175374561;268837824;0;32285000000;0;21291000000;72.68621
-P_E8;mri-gridding  splitSortint, int, unsigned int*, unsigned int*, unsigned int*;43;98.05;0.606613;4921261;19834466;0;0;0;590910276;12.65226
-P_E9;mri-gridding  scan_L1_kernelunsigned int, unsigned int*, unsigned int*;22;66.76;0.44594;802134;3321879;0;0;0;186676384;2.8117898
-P_F1;mri-q  ComputeQ_GPUint, int, float*, float*, float*, float*, float*;23;87.94;0.51076;49152;0;0;301989888;0;84410368;99.23405
-P_G1;sad  larger_sad_calc_16unsigned short*, int, int;32;98.85;0.492545;8409840;0;0;0;0;52879080;8.062752
-P_G2;sad  mb_sad_calcunsigned short*, unsigned short*, int, int;56;99.77;0.543463;9905280;11191680;0;0;0;5832794880;47.059147
-P_G3;sad  larger_sad_calc_8unsigned short*, int, int;32;99.69;0.965088;33639360;0;0;0;0;238273440;44.878098
-P_H1;sgemm  mysgemmNTfloat const *, int, float const *, int, float*, int, int, float, float;42;94.54;0.58996;19261440;17022720;0;1074855936;0;363804672;100
-P_I1;spmv  spmv_jdsfloat*, float const *, int const *, int const *, float const *, int const *, int;30;95.43;0.851414;3762968;0;0;3637385;0;43682078;100
-P_J1;stencil  block2D_hybrid_coarsen_xfloat, float, float*, float*, int, int, int;32;92.23;0.142899;525768;205376;0;6890184;0;55288720;100
-P_K1;tpacf  gen_histsunsigned long*, float*, float*, float*, int, int;32;1.89;0.123065;5;580;0;0;0;41592;100
-R_A1;b+tree  findRangeK;32;98.63;0.945335;5575416;0;0;0;0;209028438;52.49496
-R_A2;b+tree  findK;25;98.75;0.87979;4665682;0;0;0;0;195896847;47.50504
-R_B1;backprop_65536  bpnn_layerforward_CUDAfloat*, float*, float*, float*, int, int;17;93.97;0.928976;573440;413696;0;6225920;0;87097344;24.813856
-R_B2;backprop_65536  bpnn_adjust_weights_cudafloat*, int, float*, int, float*, float*;20;97.58;0.960798;2179103;0;0;0;7340112;19923056;75.18614
-R_C1;bfs_1MW_6  KernelNode*, int*, bool*, bool*, bool*, int*, int;19;83.73;0.636684;1800020;0;0;0;0;12460450;90.415306
-R_C2;bfs_1MW_6  Kernel2bool*, bool*, bool*, bool*, int;12;83.91;0.758054;167061;0;0;0;0;6334229;9.584693
-R_E1;gaussian_208  Fan2float*, float*, float*, int, int, int;13;56.31;0.090635;27831;0;0;14594;0;687370;79.241264
-R_E2;gaussian_208  Fan1float*, float*, int, int;14;0.88;0.151312;221;0;0;1039;0;5360;20.758736
-R_F1;heartwall_20  kernelvoid;36;96.6;0.228187;270097632;36113374;1819;984925165;7285;5348593569;100
-R_G1;hotspot3d_512x8  hotspotOpt1float*, float*, float*, float, int, int, int, float, float, float, float, float, float, float;35;95.5;0.690472;3661824;0;0;35651584;0;123467776;100
-R_H1;hotspot_1024  calculate_tempint, float*, float*, float*, int, int, int, int, float, float, float, float, float, float;38;98.94;0.724001;1380240;997428;0;51551120;17319484;208536144;100
-R_I1;huffman  vlc_encode_kernel_sm64huffunsigned int*, unsigned int const *, unsigned int const *, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*;45;94.75;0.599023;207120;624416;196608;525312;0;108778100;90.921684
-R_J4;hybridsort  bucketsortfloat*, int*, float*, int, unsigned int*, unsigned int*;13;94.11;0.06786;811425;111534;0;0;0;10542912;11.726861
-R_J5;hybridsort  mergeSortPassfloat4*, int, int;30;63.81;0.268887;125372;0;2448;2727044;0;2348435;57.52714
-R_J7;hybridsort  bucketcountfloat*, int*, unsigned int*, int;14;96.51;0.068271;203244;187602;0;5000000;0;14454760;21.347027
-R_K1;kmeans_819200  invert_mappingfloat*, float*, int, int;17;99.52;0.916672;31334400;0;0;0;0;129496320;53.06761
-R_K2;kmeans_819200  kmeansPointfloat*, int, int, int, int*, float*, float*, int*;19;99.12;0.963738;102400;0;0;282624000;0;361417728;46.93238
-R_L1;lavaMD_20  kernel_gpu_cudapar_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*;56;99.47;0.56104;251120240;414085440;0;1951120000;62438000000;6987425504;100
-R_M2;leukocyte_10  IMGVF_kernelfloat**, float**, int*, int*, float, float, float, int, float;59;68.13;0.203169;6057365;8057560;4889;4185965923;221455330;2473406505;98.40578
-R_N1;lud_2048  lud_diagonalfloat*, int, int;48;3.03;0.015625;94;1270;0;1480;0;8232;23.189917
-R_N2;lud_2048  lud_perimeterfloat*, int, int;48;69.11;0.037196;16256;24064;0;278528;0;276480;11.937395
-R_N3;lud_2048  lud_internalfloat*, int, int;22;80.1;0.810807;1218560;1131520;0;23674880;0;36208640;64.87268
-R_O1;mummergpu  mummergpuKernelvoid*, char*, char*, int const *, int const *, int, int;23;99.91;0.900046;1234906466;0;1029732;0;0;23613000000;48.630733
-R_O2;mummergpu  printKernelMatchInfo*, int, Alignment*, char*, int const *, int const *, int, int, int, int, int;25;99.92;0.746648;58147659;0;13944;0;0;1559838769;51.369263
-R_P1;myocyte_10  kernelint, float*, float*, float*, float*;90;5.2;0.015625;200;0;0;2432;1422;1033;100
-R_Q1;nn  euclidlatLong*, float*, int, float, float;8;40.61;0.696038;26728;0;0;427640;0;643168;100
-R_R1;nw_2048  needle_cuda_shared_1int*, int*, int, int, int, int;32;64.01;0.037345;9288;39344;0;0;0;209689;51.332348
-R_R2;nw_2048  needle_cuda_shared_2int*, int*, int, int, int, int;32;64.04;0.037147;9216;39040;0;0;0;209088;48.66765
-R_S2;particlefilter-float  likelihood_kerneldouble*, double*, double*, double*, double*, int*, int*, double*, unsigned char*, double*, double*, int, int, int, int, int, int, int*, double*;39;7.01;0.24998;258432;362;250;303000;919026;1320485;28.835913
-R_S3;particlefilter-float  normalize_weights_kerneldouble*, int, double*, double*, double*, int*;23;3.57;0.249298;3006;72;0;8007;14022;18227;39.106777
-R_S4;particlefilter-float  find_index_kerneldouble*, double*, double*, double*, double*, double*, double*, int;10;6.14;0.249978;62002;0;0;0;478119;2410694;31.733206
-R_T1;particlefilter-naive  kerneldouble*, double*, double*, double*, double*, double*, int;10;19.53;0.05794;65578;0;0;0;506097;2550584;100
-R_U1;pathfinder  dynproc_kernelint, int*, int*, int*, int, int, int, int;14;83.67;0.882899;603742;439260;0;0;0;43055212;100
-R_V1;sc_gpu  kernel_compute_costint, int, long, Point*, int, int, float*, float*, int*, bool*;32;80.66;0.94694;6590535;0;0;33816576;0;88735744;100
-R_W2;srad-v1  reducelong, int, int, float*, float*;32;37.91;0.490583;58586;135771;0;232987;0;4579932;32.368893
-R_W3;srad-v1  srad2float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float*, float*;21;86;0.815946;610772;0;0;1149580;459832;18396132;26.125738
-R_W5;srad-v1  preparelong, float*, float*, float*;10;64.68;0.865816;172438;0;0;229916;0;2760928;6.8441234
-R_W6;srad-v1  sradfloat, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float, float*, float*;19;87.74;0.865732;675493;0;0;11495800;2069244;29432100;34.525097
-R_X1;srad-v2  srad_cuda_1float*, float*, float*, float*, float*, float*, int, int, float;21;99.16;0.971695;6840320;2000421;0;255852544;37748736;260292608;56.432796
-R_X2;srad-v2  srad_cuda_2float*, float*, float*, float*, float*, float*, int, int, float, float;20;99.2;0.974011;8400896;1458176;0;16777216;8388608;235044864;43.567204
-S_C1;level1_BFS  BFS_kernel_warpunsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*;14;3.04;0.289038;5186;0;0;1024;0;293199;100
-S_D1;level1_FFT  void chk512_device<double2>double2 const *, int, char*;54;35.8;0.068365;32768;0;0;0;65536;53248;4.375177
-S_D2;level1_FFT  void chk512_device<float2>float2 const *, int, char*;38;36.86;0.132327;32768;0;0;131072;0;106496;3.9810936
-S_D3;level1_FFT  void FFT512_device<double2, double>double2*;48;72.59;0.13583;65536;32768;0;344064;2048000;139264;33.91998
-S_D4;level1_FFT  void IFFT512_device<float2, float>float2*;32;63.72;0.255755;65536;40960;0;4816896;229376;278528;11.183061
-S_D5;level1_FFT  void IFFT512_device<double2, double>double2*;48;73.29;0.13582;65536;32768;0;344064;2179072;139264;35.145794
-S_D6;level1_FFT  void FFT512_device<float2, float>float2*;32;63.99;0.256124;65536;40960;0;4554752;229376;278528;11.394901
-S_E2;level1_GEMM  void gemm_kernel2x2_tile_multiple_core<double, bool=1, bool=0, bool=0, bool=0, bool=1>double*, double const *, double const *, int, int, int, int, int, int, double*, double*, double, double, int;48;63.95;0.0705;69632;81920;0;0;2117632;847872;38.408844
-S_E4;level1_GEMM  void gemm_kernel2x2_tile_multiple_core<double, bool=1, bool=0, bool=0, bool=0, bool=0>double*, double const *, double const *, int, int, int, int, int, int, double*, double*, double, double, int;48;63.48;0.070867;69632;81920;0;0;2117632;884736;39.330727
-S_F1;level1_MD5Hash  FindKeyWithDigest_Kernelunsigned int, unsigned int, unsigned int, unsigned int, int, int, int, int*, unsigned char*, unsigned int*;31;98.64;0.887908;13;0;0;1000320;0;2365020688;100
-S_G1;level1_MD  void compute_lj_force<float, float3, float4, bool=1, texReader_sp>float3*, float4 const *, int, int const *, float, float, float, int;27;93.64;0.214223;417792;0;0;29854056;0;10117722;28.178919
-S_G2;level1_MD  void compute_lj_force<double, double3, double4, bool=1, texReader_dp>double3*, double4 const *, int, int const *, double, double, double, int;36;90.35;0.221085;445440;0;0;3140668;31424390;10184222;71.82109
-S_H1;level1_NeuralNet  kernelFeedForward3float*, float*, int, float*;15;12.59;0.015624;180;0;0;3200;1200;2800;2.029645
-S_H2;level1_NeuralNet  kernelBackprop3bfloat*, int, float*;12;1.43;0.015624;20;0;0;450;270;240;12.437875
-S_H4;level1_NeuralNet  kernelBackprop3afloat*, int, int, int, float*, int;20;2.07;0.015625;172;0;0;300;0;2760;20.106699
-S_H5;level1_NeuralNet  kernelInitNablaBfloat*;8;0.7;0.031164;5;0;0;0;0;120;0.6598133
-S_H6;level1_NeuralNet  kernelBackprop2float*, int, float*, float*, float;20;1.33;0.015624;8;0;32;160;100;150;12.767474
-S_H7;level1_NeuralNet  kernelBackprop1float*, int, float*, float*, int;8;21.4;0.196528;5966;0;0;11910;0;166740;17.952646
-S_H9;level1_NeuralNet  kernelInitNablaWfloat*, int;8;18.81;0.470579;2978;0;0;0;0;169764;0.63973415
-S_I1;level1_Reduction  void reduce<float, int=256>float const *, float*, unsigned int;11;48.07;0.262325;65600;11072;0;286720;0;868544;48.901684
-S_I2;level1_Reduction  void reduce<double, int=256>double const *, double*, unsigned int;16;48.66;0.246683;32832;13888;0;0;155648;540864;51.098312
-S_J1;level1_Scan  void reduce<float, int=256>float const *, float*, int;27;61.57;0.272636;65600;2880;0;303104;0;1097920;25.693985
-S_J2;level1_Scan  void reduce<double, int=256>double const *, double*, int;30;60.76;0.263513;32832;5696;0;16384;155648;1097920;0.5777756
-S_J3;level1_Scan  void bottom_scan<double, double4, int=256>double const *, double*, double const *, int;32;69.68;0.278785;131136;56704;0;16384;524288;1048512;1.4679013
-S_J4;level1_Scan  void scan_single_block<double, int=256>double*, int;16;1.67;0.123722;32;432;0;0;2048;1280;0.33556092
-S_J5;level1_Scan  void scan_single_block<float, int=256>float*, int;8;1.49;0.123416;24;216;0;2048;0;1280;16.614605
-S_J6;level1_Scan  void bottom_scan<float, float4, int=256>float const *, float*, float const *, int;24;73.3;0.283313;65600;57664;0;1064960;0;999360;55.310177
-S_K1;level1_Sort  scanunsigned int*, unsigned int*, unsigned int*, int, bool, bool;15;7.75;0.120344;1028;972;0;254;0;37524;13.771209
-S_K2;level1_Sort  findRadixOffsetsuint2*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int;10;65.75;0.846432;41984;50368;0;0;0;3103424;12.70123
-S_K3;level1_Sort  radixSortBlocksunsigned int, unsigned int, uint4*, uint4*, uint4*, uint4*;31;82.55;0.759241;131072;358400;0;0;0;16975872;48.218815
-S_K4;level1_Sort  vectorAddUniform4unsigned int*, unsigned int const *, int;8;12.96;0.121136;3080;72;0;0;0;77848;5.856246
-S_K5;level1_Sort  reorderDataunsigned int, unsigned int*, unsigned int*, uint2*, uint2*, unsigned int*, unsigned int*, unsigned int*, unsigned int;16;77.16;0.859158;141312;50176;0;0;0;4546560;19.452496
-S_L1;level1_Spmv  void spmv_csr_vector_kernel<float, texReaderSP>float const *, int const *, int const *, int, float*;24;39.75;0.468918;17014;17408;0;78170;0;1614645;11.771091
-S_L2;level1_Spmv  void zero<double>double*, int;8;5.49;0.061996;256;0;0;0;0;7168;0.005030925
-S_L3;level1_Spmv  void zero<float>float*, int;8;4.4;0.062062;128;0;0;0;0;7168;0.0047941753
-S_L4;level1_Spmv  void spmv_ellpackr_kernel<double, texReaderDP>double const *, int const *, int const *, int, double*;40;14.87;0.055894;16406;0;0;0;10485;86922;6.555185
-S_L5;level1_Spmv  void spmv_csr_scalar_kernel<double, texReaderDP>double const *, int const *, int const *, int, double*;32;13.78;0.053067;28033;0;0;0;13658;41182;30.904383
-S_L6;level1_Spmv  void spmv_ellpackr_kernel<float, texReaderSP>float const *, int const *, int const *, int, float*;32;14.31;0.056306;16278;0;0;10485;0;83613;12.705883
-S_L7;level1_Spmv  void spmv_csr_vector_kernel<double, texReaderDP>double const *, int const *, int const *, int, double*;27;51.63;0.493715;17660;29696;0;32768;45402;1582901;16.725033
-S_L8;level1_Spmv  void spmv_csr_scalar_kernel<float, texReaderSP>float const *, int const *, int const *, int, float*;32;13.67;0.055675;27797;0;0;13658;0;40238;21.328594
-S_M1;level1_Stencil2D  void StencilKernel<float>float*, float*, int, int, float, float, float;32;73.34;0.545276;145920;86528;0;2392064;0;8968192;100
-S_N1;level1_Triad  triadfloat*, float*, float*, float;8;38.84;0.428996;46170;0;0;73872;0;812595;100
-S_O1;level2_QtClustering  QTC_devicefloat*, char*, char*, int*, int*, int*, float*, int*, int, int, int, float, int, int, int, int, bool;56;85.74;0.205768;805538;1053496;0;1969776;0;56668144;74.17319
-S_O2;level2_QtClustering  reduce_card_deviceint*, int;12;3.29;0.015625;235;0;0;0;0;409;5.329866
-S_O3;level2_QtClustering  compute_degreesint*, int*, int, int;29;88.72;0.137725;561664;0;0;16384;0;2465792;0.01501205
-S_O4;level2_QtClustering  trim_ungrouped_pnts_indr_arrayint, int*, float*, int*, char*, char*, int*, int*, float*, int*, int, int, int, float, int, bool;53;3.43;0.031138;2540;1465;0;2595;0;78861;18.30382
-S_O5;level2_QtClustering  update_clustered_pnts_maskchar*, char*, int;12;3.15;0.031249;1152;0;0;0;0;37312;2.1781096
-S_P1;level2_s3d  void rdsmh_kernel<double>double const *, double*, double;64;77.26;0.07308;32768;0;0;139264;2813952;1032192;1.6276816
-S_P2;level2_s3d  void rdwdot10_kernel<float>float const *, float const *, float*, float, float const *;32;90.87;0.236488;815616;0;0;3483648;0;13022208;1.957902
-S_P3;level2_s3d  void qssab_kernel<double>double*, double*, double*;70;90.32;0.070663;390144;0;0;155648;978944;1081344;1.9006463
-S_P4;level2_s3d  void ratt_kernel<double>double const *, double*, double;40;86.78;0.072363;211968;0;0;462848;7741440;4767744;4.38735
-S_P5;level2_s3d  void rdwdot2_kernel<float>float const *, float const *, float*, float, float const *;32;76.54;0.234257;174528;0;0;801792;0;2972160;0.36850557
-S_P6;level2_s3d  void rdwdot3_kernel<float>float const *, float const *, float*, float, float const *;32;93.02;0.240423;736128;0;0;3110400;0;11999232;1.7561637
-S_P7;level2_s3d  void rdwdot6_kernel<float>float const *, float const *, float*, float, float const *;32;84.8;0.238379;297216;0;0;1313280;0;4907520;0.8213702
-S_P8;level2_s3d  void rdwdot7_kernel<float>float const *, float const *, float*, float, float const *;32;88.19;0.240023;366336;0;0;1728000;0;5985792;0.90262157
-S_P9;level2_s3d  void rdwdot8_kernel<float>float const *, float const *, float*, float, float const *;32;80.75;0.237307;297216;0;0;1340928;0;4866048;0.75817317
-S_P10;level2_s3d  void rdwdot9_kernel<float>float const *, float const *, float*, float, float const *;32;88.81;0.239894;404352;0;0;1658880;0;6469632;1.0332999
-S_P11;level2_s3d  void qssa2_kernel<float>float*, float*, float const *;32;93.36;0.238185;960768;0;0;2557440;0;12261888;3.8299747
-S_P12;level2_s3d  void ratx2_kernel<float>float const *, float*, float*;40;94.2;0.237984;1062720;0;0;3967488;0;14155776;4.3057756
-S_P13;level2_s3d  void rdwdot_kernel<float>float const *, float const *, float*, float, float const *;32;91.13;0.24027;590976;0;0;2391552;0;9469440;1.6463482
-S_P14;level2_s3d  void ratx4_kernel<float>float const *, float*, float*;32;93.84;0.237864;1066176;0;0;4423680;0;14197248;4.353301
-S_P15;level2_s3d  void ratt10_kernel<float>float const *, float*, float;27;89.11;0.24193;39744;0;0;594432;4935168;1976832;1.7400019
-S_P16;level2_s3d  void ratt2_kernel<float>float const *, float const *, float*, float const *, float;33;79.01;0.233934;160704;0;0;2267136;0;3746304;0.6188672
-S_P17;level2_s3d  void ratt3_kernel<float>float const *, float const *, float*, float const *, float;33;81.65;0.233952;188352;0;0;2640384;0;4893696;0.7742912
-S_P18;level2_s3d  void gr_base<double>double const *, double const *, double const *, double*, double, double;56;73.63;0.070592;92160;0;0;8192;401408;737280;0.93542105
-S_P19;level2_s3d  void ratt4_kernel<float>float const *, float const *, float*, float const *, float;33;82.31;0.235071;195264;0;0;2626560;0;4962816;0.76868314
-S_P20;level2_s3d  void ratt5_kernel<float>float const *, float const *, float*, float const *, float;33;83.74;0.237605;216000;0;0;2820096;0;5474304;0.8221496
-S_P21;level2_s3d  void ratt6_kernel<float>float const *, float const *, float*, float const *, float;32;82.86;0.238171;216000;0;0;2792448;0;5391360;0.809919
-S_P22;level2_s3d  void gr_base<float>float const *, float const *, float const *, float*, float, float;56;77.28;0.233224;235008;0;0;981504;400896;2488320;1.3213091
-S_P23;level2_s3d  void ratt7_kernel<float>float const *, float const *, float*, float const *, float;31;83.11;0.235112;219456;0;0;2944512;0;5557248;0.8435077
-S_P24;level2_s3d  void ratt8_kernel<float>float const *, float const *, float*, float const *, float;31;83.88;0.234453;216000;0;0;2958336;0;5640192;0.8462971
-S_P25;level2_s3d  void ratt9_kernel<float>float const *, float const *, float*, float const *, float;36;85.43;0.236971;243648;0;0;3870720;0;6621696;0.98043644
-S_P26;level2_s3d  void qssa_kernel<float>float*, float*, float*;101;95.22;0.240734;1050624;0;0;5170176;0;18233856;2.9460196
-S_P27;level2_s3d  void rdsmh_kernel<float>float const *, float*, float;64;92.65;0.242429;57024;0;0;760320;9427968;3511296;3.474509
-S_P28;level2_s3d  void rdwdot10_kernel<double>double const *, double const *, double*, double, double const *;54;90.5;0.071462;243712;0;0;0;1032192;3821568;1.3368486
-S_P29;level2_s3d  void qssab_kernel<float>float*, float*, float*;66;90.33;0.235477;1100736;0;0;3041280;0;4174848;1.6672211
-S_P30;level2_s3d  void ratt_kernel<float>float const *, float*, float;32;94.65;0.242675;359424;0;0;1893888;25588224;15911424;8.948468
-S_P31;level2_s3d  void rdwdot2_kernel<double>double const *, double const *, double*, double, double const *;32;67.19;0.070868;53248;0;0;0;237568;880640;0.3120096
-S_P32;level2_s3d  void rdwdot3_kernel<double>double const *, double const *, double*, double, double const *;32;87.22;0.070896;221696;0;0;0;921600;3543040;1.3180296
-S_P33;level2_s3d  void rdwdot6_kernel<double>double const *, double const *, double*, double, double const *;32;75.72;0.070484;89088;0;0;0;389120;1441792;0.54213566
-S_P34;level2_s3d  void rdwdot7_kernel<double>double const *, double const *, double*, double, double const *;32;81.36;0.07122;109568;0;0;0;512000;1773568;0.66607374
-S_P35;level2_s3d  void rdwdot8_kernel<double>double const *, double const *, double*, double, double const *;32;78;0.071048;89088;0;0;0;397312;1441792;0.5662929
-S_P36;level2_s3d  void rdwdot9_kernel<double>double const *, double const *, double*, double, double const *;32;82.59;0.071293;120320;0;0;0;491520;1990656;0.7098489
-S_P37;level2_s3d  void qssa2_kernel<double>double*, double*, double const *;32;92.66;0.071177;369664;0;0;0;757760;3633152;3.4536552
-S_P38;level2_s3d  void ratx2_kernel<double>double const *, double*, double*;48;91.85;0.071141;412672;0;0;0;1175552;4194304;4.0428696
-S_P39;level2_s3d  void rdwdot_kernel<double>double const *, double const *, double*, double, double const *;32;84.1;0.071322;175616;0;0;0;708608;2793472;1.1498556
-S_P40;level2_s3d  void ratx4_kernel<double>double const *, double*, double*;56;92.7;0.071125;413696;0;0;0;1310720;4206592;4.0936837
-S_P41;level2_s3d  void ratxb_kernel<double>double const *, double const *, double*, double*, double const *, double;76;80.87;0.071077;102400;0;0;520192;6447104;2166784;3.7554634
-S_P42;level2_s3d  void ratxb_kernel<float>float const *, float const *, float*, float*, float const *, float;60;92.04;0.232005;286848;0;0;12151296;6248448;5847552;3.5333323
-S_P43;level2_s3d  void ratt2_kernel<double>double const *, double const *, double*, double const *, double;44;75.01;0.070768;60416;0;0;147456;745472;962560;0.6580785
-S_P44;level2_s3d  void ratt10_kernel<double>double const *, double*, double;28;72.41;0.073128;22528;0;0;98304;1601536;626688;0.95846534
-S_P45;level2_s3d  void ratt3_kernel<double>double const *, double const *, double*, double const *, double;64;77.87;0.071161;68608;0;0;172032;892928;1236992;0.68645644
-S_P46;level2_s3d  void ratx_kernel<double>double const *, double const *, double*, double*, double const *, double;54;79.62;0.071244;84992;0;0;651264;7544832;2375680;4.233936
-S_P47;level2_s3d  void ratt4_kernel<double>double const *, double const *, double*, double const *, double;56;76.86;0.071202;70656;0;0;172032;876544;1277952;0.6968242
-S_P48;level2_s3d  void ratt5_kernel<double>double const *, double const *, double*, double const *, double;56;78.42;0.071047;76800;0;0;188416;942080;1413120;0.79045796
-S_P49;level2_s3d  void ratt6_kernel<double>double const *, double const *, double*, double const *, double;44;79.02;0.070938;76800;0;0;172032;925696;1404928;0.776046
-S_P50;level2_s3d  void ratx_kernel<float>float const *, float const *, float*, float*, float const *, float;45;91.99;0.231783;245376;0;0;14211072;7174656;6386688;3.778229
-S_P51;level2_s3d  void ratt7_kernel<double>double const *, double const *, double*, double const *, double;52;79.35;0.070837;77824;0;0;204800;974848;1441792;0.81665933
-S_P52;level2_s3d  void ratt8_kernel<double>double const *, double const *, double*, double const *, double;50;79.23;0.070833;76800;0;0;204800;1003520;1425408;0.8224731
-S_P53;level2_s3d  void ratt9_kernel<double>double const *, double const *, double*, double const *, double;63;80.05;0.070986;88064;0;0;253952;1265664;1626112;0.92003345
-S_P54;level2_s3d  void qssa_kernel<double>double*, double*, double*;142;93.1;0.071396;337920;0;0;81920;1572864;5320704;2.2360237
+nicknames;application/kernel;Num. of Registers;sm_efficiency(Avg)%;achieved_occupancy(Avg);total_global_transactions;shared_total_transactions;inst_fp_32(Avg);inst_fp_64(Avg);inst_integer(Avg);time_percentage
+P_A1;bfs  BFS_kernel_multi_blk_inGPUint*, int*, int2*, int2*, int*, int*, int*, int*, int, int, int*, int*, int*, int*;30;49.97;0.249998;3377073;1392173;0;0;111201540;60.048016
+P_A2;bfs  BFS_in_GPU_kernelint*, int*, int2*, int2*, int*, int*, int, int*, int, int, int*;28;3.56;0.249997;263376;135020;0;0;11545862;39.951984
+P_B1;cutcp  cuda_cutoff_potential_lattice6overlapint, int, float4*, float, float, float, float*, int;25;93.55;0.820161;1854944;13833601;3656355477;0;246538939;100
+P_C1;histo  histo_prescan_kernelunsigned int*, int, unsigned int*;17;62.87;0.527797;76944;9472;1338816;0;2899648;4.7826896
+P_C2;histo  histo_main_kerneluchar4*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int*, unsigned int*, unsigned int*;19;92.58;0.591051;1618272;375894;0;0;77404416;54.6465
+P_C3;histo  histo_final_kernelunsigned int, unsigned int, unsigned int, unsigned int, unsigned int*, unsigned int*, unsigned int*, unsigned int*;32;86.64;0.350718;311296;0;0;0;11341824;19.621044
+P_C4;histo  histo_intermediates_kerneluint2*, unsigned int, unsigned int, unsigned int, uchar4*;16;85.88;0.567422;348920;0;0;0;28420860;20.949768
+P_D1;lbm  performStreamCollide_kernelfloat*, float*;40;99.52;0.615658;16650000;0;302788344;0;132322731;100
+P_E1;mri-gridding  reorder_kernelint, unsigned int*, ReconstructionSample*, sampleArrayStruct;14;99.15;0.942877;17198877;0;0;0;61087314;1.5220302
+P_E2;mri-gridding  splitRearrangeint, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*;30;90.7;0.795664;4197770;10315022;0;0;400964940;6.480968
+P_E4;mri-gridding  uniformAddunsigned int, unsigned int*, unsigned int*;8;47.88;0.412678;802134;68755;0;0;17076188;0.90532804
+P_E6;mri-gridding  binning_kernelunsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int;9;99.61;0.832192;8384433;0;0;0;84976658;2.8125155
+P_E7;mri-gridding  gridding_GPUsampleArrayStruct, unsigned int*, float2*, float*, float;43;99.9;0.591485;175374561;268837824;32285000000;0;21291000000;72.68621
+P_E8;mri-gridding  splitSortint, int, unsigned int*, unsigned int*, unsigned int*;43;98.05;0.606613;4921261;19834466;0;0;590910276;12.65226
+P_E9;mri-gridding  scan_L1_kernelunsigned int, unsigned int*, unsigned int*;22;66.76;0.44594;802134;3321879;0;0;186676384;2.8117898
+P_F1;mri-q  ComputeQ_GPUint, int, float*, float*, float*, float*, float*;23;87.94;0.51076;49152;0;301989888;0;84410368;99.23405
+P_G1;sad  larger_sad_calc_16unsigned short*, int, int;32;98.85;0.492545;8409840;0;0;0;52879080;8.062752
+P_G2;sad  mb_sad_calcunsigned short*, unsigned short*, int, int;56;99.77;0.543463;9905280;11191680;0;0;5832794880;47.059147
+P_G3;sad  larger_sad_calc_8unsigned short*, int, int;32;99.69;0.965088;33639360;0;0;0;238273440;44.878098
+P_H1;sgemm  mysgemmNTfloat const *, int, float const *, int, float*, int, int, float, float;42;94.54;0.58996;19261440;17022720;1074855936;0;363804672;100
+P_I1;spmv  spmv_jdsfloat*, float const *, int const *, int const *, float const *, int const *, int;30;95.43;0.851414;3762968;0;3637385;0;43682078;100
+P_J1;stencil  block2D_hybrid_coarsen_xfloat, float, float*, float*, int, int, int;32;92.23;0.142899;525768;205376;6890184;0;55288720;100
+P_K1;tpacf  gen_histsunsigned long*, float*, float*, float*, int, int;32;1.89;0.123065;5;580;0;0;41592;100
+R_A1;b+tree  findRangeK;32;98.63;0.945335;5575416;0;0;0;209028438;52.49496
+R_A2;b+tree  findK;25;98.75;0.87979;4665682;0;0;0;195896847;47.50504
+R_B1;backprop_65536  bpnn_layerforward_CUDAfloat*, float*, float*, float*, int, int;17;93.97;0.928976;573440;413696;6225920;0;87097344;24.813856
+R_B2;backprop_65536  bpnn_adjust_weights_cudafloat*, int, float*, int, float*, float*;20;97.58;0.960798;2179103;0;0;7340112;19923056;75.18614
+R_C1;bfs_1MW_6  KernelNode*, int*, bool*, bool*, bool*, int*, int;19;83.73;0.636684;1800020;0;0;0;12460450;90.415306
+R_C2;bfs_1MW_6  Kernel2bool*, bool*, bool*, bool*, int;12;83.91;0.758054;167061;0;0;0;6334229;9.584693
+R_E1;gaussian_208  Fan2float*, float*, float*, int, int, int;13;56.31;0.090635;27831;0;14594;0;687370;79.241264
+R_E2;gaussian_208  Fan1float*, float*, int, int;14;0.88;0.151312;221;0;1039;0;5360;20.758736
+R_F1;heartwall_20  kernelvoid;36;96.6;0.228187;270097632;36113374;984925165;7285;5348593569;100
+R_G1;hotspot3d_512x8  hotspotOpt1float*, float*, float*, float, int, int, int, float, float, float, float, float, float, float;35;95.5;0.690472;3661824;0;35651584;0;123467776;100
+R_H1;hotspot_1024  calculate_tempint, float*, float*, float*, int, int, int, int, float, float, float, float, float, float;38;98.94;0.724001;1380240;997428;51551120;17319484;208536144;100
+R_I1;huffman  vlc_encode_kernel_sm64huffunsigned int*, unsigned int const *, unsigned int const *, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*;45;94.75;0.599023;207120;624416;525312;0;108778100;90.921684
+R_J4;hybridsort  bucketsortfloat*, int*, float*, int, unsigned int*, unsigned int*;13;94.11;0.06786;811425;111534;0;0;10542912;11.726861
+R_J5;hybridsort  mergeSortPassfloat4*, int, int;30;63.81;0.268887;125372;0;2727044;0;2348435;57.52714
+R_J7;hybridsort  bucketcountfloat*, int*, unsigned int*, int;14;96.51;0.068271;203244;187602;5000000;0;14454760;21.347027
+R_K1;kmeans_819200  invert_mappingfloat*, float*, int, int;17;99.52;0.916672;31334400;0;0;0;129496320;53.06761
+R_K2;kmeans_819200  kmeansPointfloat*, int, int, int, int*, float*, float*, int*;19;99.12;0.963738;102400;0;282624000;0;361417728;46.93238
+R_L1;lavaMD_20  kernel_gpu_cudapar_str, dim_str, box_str*, FOUR_VECTOR*, double*, FOUR_VECTOR*;56;99.47;0.56104;251120240;414085440;1951120000;62438000000;6987425504;100
+R_M2;leukocyte_10  IMGVF_kernelfloat**, float**, int*, int*, float, float, float, int, float;59;68.13;0.203169;6057365;8057560;4185965923;221455330;2473406505;98.40578
+R_N1;lud_2048  lud_diagonalfloat*, int, int;48;3.03;0.015625;94;1270;1480;0;8232;23.189917
+R_N2;lud_2048  lud_perimeterfloat*, int, int;48;69.11;0.037196;16256;24064;278528;0;276480;11.937395
+R_N3;lud_2048  lud_internalfloat*, int, int;22;80.1;0.810807;1218560;1131520;23674880;0;36208640;64.87268
+R_O1;mummergpu  mummergpuKernelvoid*, char*, char*, int const *, int const *, int, int;23;99.91;0.900046;1234906466;0;0;0;23613000000;48.630733
+R_O2;mummergpu  printKernelMatchInfo*, int, Alignment*, char*, int const *, int const *, int, int, int, int, int;25;99.92;0.746648;58147659;0;0;0;1559838769;51.369263
+R_P1;myocyte_10  kernelint, float*, float*, float*, float*;90;5.2;0.015625;200;0;2432;1422;1033;100
+R_Q1;nn  euclidlatLong*, float*, int, float, float;8;40.61;0.696038;26728;0;427640;0;643168;100
+R_R1;nw_2048  needle_cuda_shared_1int*, int*, int, int, int, int;32;64.01;0.037345;9288;39344;0;0;209689;51.332348
+R_R2;nw_2048  needle_cuda_shared_2int*, int*, int, int, int, int;32;64.04;0.037147;9216;39040;0;0;209088;48.66765
+R_S2;particlefilter-float  likelihood_kerneldouble*, double*, double*, double*, double*, int*, int*, double*, unsigned char*, double*, double*, int, int, int, int, int, int, int*, double*;39;7.01;0.24998;258432;362;303000;919026;1320485;28.835913
+R_S3;particlefilter-float  normalize_weights_kerneldouble*, int, double*, double*, double*, int*;23;3.57;0.249298;3006;72;8007;14022;18227;39.106777
+R_S4;particlefilter-float  find_index_kerneldouble*, double*, double*, double*, double*, double*, double*, int;10;6.14;0.249978;62002;0;0;478119;2410694;31.733206
+R_T1;particlefilter-naive  kerneldouble*, double*, double*, double*, double*, double*, int;10;19.53;0.05794;65578;0;0;506097;2550584;100
+R_U1;pathfinder  dynproc_kernelint, int*, int*, int*, int, int, int, int;14;83.67;0.882899;603742;439260;0;0;43055212;100
+R_V1;sc_gpu  kernel_compute_costint, int, long, Point*, int, int, float*, float*, int*, bool*;32;80.66;0.94694;6590535;0;33816576;0;88735744;100
+R_W2;srad-v1  reducelong, int, int, float*, float*;32;37.91;0.490583;58586;135771;232987;0;4579932;32.368893
+R_W3;srad-v1  srad2float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float*, float*;21;86;0.815946;610772;0;1149580;459832;18396132;26.125738
+R_W5;srad-v1  preparelong, float*, float*, float*;10;64.68;0.865816;172438;0;229916;0;2760928;6.8441234
+R_W6;srad-v1  sradfloat, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float, float*, float*;19;87.74;0.865732;675493;0;11495800;2069244;29432100;34.525097
+R_X1;srad-v2  srad_cuda_1float*, float*, float*, float*, float*, float*, int, int, float;21;99.16;0.971695;6840320;2000421;255852544;37748736;260292608;56.432796
+R_X2;srad-v2  srad_cuda_2float*, float*, float*, float*, float*, float*, int, int, float, float;20;99.2;0.974011;8400896;1458176;16777216;8388608;235044864;43.567204
+S_C1;level1_BFS  BFS_kernel_warpunsigned int*, unsigned int*, unsigned int*, int, int, unsigned int, int, int*;14;3.04;0.289038;5186;0;1024;0;293199;100
+S_D1;level1_FFT  void chk512_device<double2>double2 const *, int, char*;54;35.8;0.068365;32768;0;0;65536;53248;4.375177
+S_D2;level1_FFT  void chk512_device<float2>float2 const *, int, char*;38;36.86;0.132327;32768;0;131072;0;106496;3.9810936
+S_D3;level1_FFT  void FFT512_device<double2, double>double2*;48;72.59;0.13583;65536;32768;344064;2048000;139264;33.91998
+S_D4;level1_FFT  void IFFT512_device<float2, float>float2*;32;63.72;0.255755;65536;40960;4816896;229376;278528;11.183061
+S_D5;level1_FFT  void IFFT512_device<double2, double>double2*;48;73.29;0.13582;65536;32768;344064;2179072;139264;35.145794
+S_D6;level1_FFT  void FFT512_device<float2, float>float2*;32;63.99;0.256124;65536;40960;4554752;229376;278528;11.394901
+S_E2;level1_GEMM  void gemm_kernel2x2_tile_multiple_core<double, bool=1, bool=0, bool=0, bool=0, bool=1>double*, double const *, double const *, int, int, int, int, int, int, double*, double*, double, double, int;48;63.95;0.0705;69632;81920;0;2117632;847872;38.408844
+S_E4;level1_GEMM  void gemm_kernel2x2_tile_multiple_core<double, bool=1, bool=0, bool=0, bool=0, bool=0>double*, double const *, double const *, int, int, int, int, int, int, double*, double*, double, double, int;48;63.48;0.070867;69632;81920;0;2117632;884736;39.330727
+S_F1;level1_MD5Hash  FindKeyWithDigest_Kernelunsigned int, unsigned int, unsigned int, unsigned int, int, int, int, int*, unsigned char*, unsigned int*;31;98.64;0.887908;13;0;1000320;0;2365020688;100
+S_G1;level1_MD  void compute_lj_force<float, float3, float4, bool=1, texReader_sp>float3*, float4 const *, int, int const *, float, float, float, int;27;93.64;0.214223;417792;0;29854056;0;10117722;28.178919
+S_G2;level1_MD  void compute_lj_force<double, double3, double4, bool=1, texReader_dp>double3*, double4 const *, int, int const *, double, double, double, int;36;90.35;0.221085;445440;0;3140668;31424390;10184222;71.82109
+S_H1;level1_NeuralNet  kernelFeedForward3float*, float*, int, float*;15;12.59;0.015624;180;0;3200;1200;2800;2.029645
+S_H2;level1_NeuralNet  kernelBackprop3bfloat*, int, float*;12;1.43;0.015624;20;0;450;270;240;12.437875
+S_H4;level1_NeuralNet  kernelBackprop3afloat*, int, int, int, float*, int;20;2.07;0.015625;172;0;300;0;2760;20.106699
+S_H5;level1_NeuralNet  kernelInitNablaBfloat*;8;0.7;0.031164;5;0;0;0;120;0.6598133
+S_H6;level1_NeuralNet  kernelBackprop2float*, int, float*, float*, float;20;1.33;0.015624;8;0;160;100;150;12.767474
+S_H7;level1_NeuralNet  kernelBackprop1float*, int, float*, float*, int;8;21.4;0.196528;5966;0;11910;0;166740;17.952646
+S_H9;level1_NeuralNet  kernelInitNablaWfloat*, int;8;18.81;0.470579;2978;0;0;0;169764;0.63973415
+S_I1;level1_Reduction  void reduce<float, int=256>float const *, float*, unsigned int;11;48.07;0.262325;65600;11072;286720;0;868544;48.901684
+S_I2;level1_Reduction  void reduce<double, int=256>double const *, double*, unsigned int;16;48.66;0.246683;32832;13888;0;155648;540864;51.098312
+S_J1;level1_Scan  void reduce<float, int=256>float const *, float*, int;27;61.57;0.272636;65600;2880;303104;0;1097920;25.693985
+S_J2;level1_Scan  void reduce<double, int=256>double const *, double*, int;30;60.76;0.263513;32832;5696;16384;155648;1097920;0.5777756
+S_J3;level1_Scan  void bottom_scan<double, double4, int=256>double const *, double*, double const *, int;32;69.68;0.278785;131136;56704;16384;524288;1048512;1.4679013
+S_J4;level1_Scan  void scan_single_block<double, int=256>double*, int;16;1.67;0.123722;32;432;0;2048;1280;0.33556092
+S_J5;level1_Scan  void scan_single_block<float, int=256>float*, int;8;1.49;0.123416;24;216;2048;0;1280;16.614605
+S_J6;level1_Scan  void bottom_scan<float, float4, int=256>float const *, float*, float const *, int;24;73.3;0.283313;65600;57664;1064960;0;999360;55.310177
+S_K1;level1_Sort  scanunsigned int*, unsigned int*, unsigned int*, int, bool, bool;15;7.75;0.120344;1028;972;254;0;37524;13.771209
+S_K2;level1_Sort  findRadixOffsetsuint2*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int;10;65.75;0.846432;41984;50368;0;0;3103424;12.70123
+S_K3;level1_Sort  radixSortBlocksunsigned int, unsigned int, uint4*, uint4*, uint4*, uint4*;31;82.55;0.759241;131072;358400;0;0;16975872;48.218815
+S_K4;level1_Sort  vectorAddUniform4unsigned int*, unsigned int const *, int;8;12.96;0.121136;3080;72;0;0;77848;5.856246
+S_K5;level1_Sort  reorderDataunsigned int, unsigned int*, unsigned int*, uint2*, uint2*, unsigned int*, unsigned int*, unsigned int*, unsigned int;16;77.16;0.859158;141312;50176;0;0;4546560;19.452496
+S_L1;level1_Spmv  void spmv_csr_vector_kernel<float, texReaderSP>float const *, int const *, int const *, int, float*;24;39.75;0.468918;17014;17408;78170;0;1614645;11.771091
+S_L2;level1_Spmv  void zero<double>double*, int;8;5.49;0.061996;256;0;0;0;7168;0.005030925
+S_L3;level1_Spmv  void zero<float>float*, int;8;4.4;0.062062;128;0;0;0;7168;0.0047941753
+S_L4;level1_Spmv  void spmv_ellpackr_kernel<double, texReaderDP>double const *, int const *, int const *, int, double*;40;14.87;0.055894;16406;0;0;10485;86922;6.555185
+S_L5;level1_Spmv  void spmv_csr_scalar_kernel<double, texReaderDP>double const *, int const *, int const *, int, double*;32;13.78;0.053067;28033;0;0;13658;41182;30.904383
+S_L6;level1_Spmv  void spmv_ellpackr_kernel<float, texReaderSP>float const *, int const *, int const *, int, float*;32;14.31;0.056306;16278;0;10485;0;83613;12.705883
+S_L7;level1_Spmv  void spmv_csr_vector_kernel<double, texReaderDP>double const *, int const *, int const *, int, double*;27;51.63;0.493715;17660;29696;32768;45402;1582901;16.725033
+S_L8;level1_Spmv  void spmv_csr_scalar_kernel<float, texReaderSP>float const *, int const *, int const *, int, float*;32;13.67;0.055675;27797;0;13658;0;40238;21.328594
+S_M1;level1_Stencil2D  void StencilKernel<float>float*, float*, int, int, float, float, float;32;73.34;0.545276;145920;86528;2392064;0;8968192;100
+S_N1;level1_Triad  triadfloat*, float*, float*, float;8;38.84;0.428996;46170;0;73872;0;812595;100
+S_O1;level2_QtClustering  QTC_devicefloat*, char*, char*, int*, int*, int*, float*, int*, int, int, int, float, int, int, int, int, bool;56;85.74;0.205768;805538;1053496;1969776;0;56668144;74.17319
+S_O2;level2_QtClustering  reduce_card_deviceint*, int;12;3.29;0.015625;235;0;0;0;409;5.329866
+S_O3;level2_QtClustering  compute_degreesint*, int*, int, int;29;88.72;0.137725;561664;0;16384;0;2465792;0.01501205
+S_O4;level2_QtClustering  trim_ungrouped_pnts_indr_arrayint, int*, float*, int*, char*, char*, int*, int*, float*, int*, int, int, int, float, int, bool;53;3.43;0.031138;2540;1465;2595;0;78861;18.30382
+S_O5;level2_QtClustering  update_clustered_pnts_maskchar*, char*, int;12;3.15;0.031249;1152;0;0;0;37312;2.1781096
+S_P1;level2_s3d  void rdsmh_kernel<double>double const *, double*, double;64;77.26;0.07308;32768;0;139264;2813952;1032192;1.6276816
+S_P2;level2_s3d  void rdwdot10_kernel<float>float const *, float const *, float*, float, float const *;32;90.87;0.236488;815616;0;3483648;0;13022208;1.957902
+S_P3;level2_s3d  void qssab_kernel<double>double*, double*, double*;70;90.32;0.070663;390144;0;155648;978944;1081344;1.9006463
+S_P4;level2_s3d  void ratt_kernel<double>double const *, double*, double;40;86.78;0.072363;211968;0;462848;7741440;4767744;4.38735
+S_P5;level2_s3d  void rdwdot2_kernel<float>float const *, float const *, float*, float, float const *;32;76.54;0.234257;174528;0;801792;0;2972160;0.36850557
+S_P6;level2_s3d  void rdwdot3_kernel<float>float const *, float const *, float*, float, float const *;32;93.02;0.240423;736128;0;3110400;0;11999232;1.7561637
+S_P7;level2_s3d  void rdwdot6_kernel<float>float const *, float const *, float*, float, float const *;32;84.8;0.238379;297216;0;1313280;0;4907520;0.8213702
+S_P8;level2_s3d  void rdwdot7_kernel<float>float const *, float const *, float*, float, float const *;32;88.19;0.240023;366336;0;1728000;0;5985792;0.90262157
+S_P9;level2_s3d  void rdwdot8_kernel<float>float const *, float const *, float*, float, float const *;32;80.75;0.237307;297216;0;1340928;0;4866048;0.75817317
+S_P10;level2_s3d  void rdwdot9_kernel<float>float const *, float const *, float*, float, float const *;32;88.81;0.239894;404352;0;1658880;0;6469632;1.0332999
+S_P11;level2_s3d  void qssa2_kernel<float>float*, float*, float const *;32;93.36;0.238185;960768;0;2557440;0;12261888;3.8299747
+S_P12;level2_s3d  void ratx2_kernel<float>float const *, float*, float*;40;94.2;0.237984;1062720;0;3967488;0;14155776;4.3057756
+S_P13;level2_s3d  void rdwdot_kernel<float>float const *, float const *, float*, float, float const *;32;91.13;0.24027;590976;0;2391552;0;9469440;1.6463482
+S_P14;level2_s3d  void ratx4_kernel<float>float const *, float*, float*;32;93.84;0.237864;1066176;0;4423680;0;14197248;4.353301
+S_P15;level2_s3d  void ratt10_kernel<float>float const *, float*, float;27;89.11;0.24193;39744;0;594432;4935168;1976832;1.7400019
+S_P16;level2_s3d  void ratt2_kernel<float>float const *, float const *, float*, float const *, float;33;79.01;0.233934;160704;0;2267136;0;3746304;0.6188672
+S_P17;level2_s3d  void ratt3_kernel<float>float const *, float const *, float*, float const *, float;33;81.65;0.233952;188352;0;2640384;0;4893696;0.7742912
+S_P18;level2_s3d  void gr_base<double>double const *, double const *, double const *, double*, double, double;56;73.63;0.070592;92160;0;8192;401408;737280;0.93542105
+S_P19;level2_s3d  void ratt4_kernel<float>float const *, float const *, float*, float const *, float;33;82.31;0.235071;195264;0;2626560;0;4962816;0.76868314
+S_P20;level2_s3d  void ratt5_kernel<float>float const *, float const *, float*, float const *, float;33;83.74;0.237605;216000;0;2820096;0;5474304;0.8221496
+S_P21;level2_s3d  void ratt6_kernel<float>float const *, float const *, float*, float const *, float;32;82.86;0.238171;216000;0;2792448;0;5391360;0.809919
+S_P22;level2_s3d  void gr_base<float>float const *, float const *, float const *, float*, float, float;56;77.28;0.233224;235008;0;981504;400896;2488320;1.3213091
+S_P23;level2_s3d  void ratt7_kernel<float>float const *, float const *, float*, float const *, float;31;83.11;0.235112;219456;0;2944512;0;5557248;0.8435077
+S_P24;level2_s3d  void ratt8_kernel<float>float const *, float const *, float*, float const *, float;31;83.88;0.234453;216000;0;2958336;0;5640192;0.8462971
+S_P25;level2_s3d  void ratt9_kernel<float>float const *, float const *, float*, float const *, float;36;85.43;0.236971;243648;0;3870720;0;6621696;0.98043644
+S_P26;level2_s3d  void qssa_kernel<float>float*, float*, float*;101;95.22;0.240734;1050624;0;5170176;0;18233856;2.9460196
+S_P27;level2_s3d  void rdsmh_kernel<float>float const *, float*, float;64;92.65;0.242429;57024;0;760320;9427968;3511296;3.474509
+S_P28;level2_s3d  void rdwdot10_kernel<double>double const *, double const *, double*, double, double const *;54;90.5;0.071462;243712;0;0;1032192;3821568;1.3368486
+S_P29;level2_s3d  void qssab_kernel<float>float*, float*, float*;66;90.33;0.235477;1100736;0;3041280;0;4174848;1.6672211
+S_P30;level2_s3d  void ratt_kernel<float>float const *, float*, float;32;94.65;0.242675;359424;0;1893888;25588224;15911424;8.948468
+S_P31;level2_s3d  void rdwdot2_kernel<double>double const *, double const *, double*, double, double const *;32;67.19;0.070868;53248;0;0;237568;880640;0.3120096
+S_P32;level2_s3d  void rdwdot3_kernel<double>double const *, double const *, double*, double, double const *;32;87.22;0.070896;221696;0;0;921600;3543040;1.3180296
+S_P33;level2_s3d  void rdwdot6_kernel<double>double const *, double const *, double*, double, double const *;32;75.72;0.070484;89088;0;0;389120;1441792;0.54213566
+S_P34;level2_s3d  void rdwdot7_kernel<double>double const *, double const *, double*, double, double const *;32;81.36;0.07122;109568;0;0;512000;1773568;0.66607374
+S_P35;level2_s3d  void rdwdot8_kernel<double>double const *, double const *, double*, double, double const *;32;78;0.071048;89088;0;0;397312;1441792;0.5662929
+S_P36;level2_s3d  void rdwdot9_kernel<double>double const *, double const *, double*, double, double const *;32;82.59;0.071293;120320;0;0;491520;1990656;0.7098489
+S_P37;level2_s3d  void qssa2_kernel<double>double*, double*, double const *;32;92.66;0.071177;369664;0;0;757760;3633152;3.4536552
+S_P38;level2_s3d  void ratx2_kernel<double>double const *, double*, double*;48;91.85;0.071141;412672;0;0;1175552;4194304;4.0428696
+S_P39;level2_s3d  void rdwdot_kernel<double>double const *, double const *, double*, double, double const *;32;84.1;0.071322;175616;0;0;708608;2793472;1.1498556
+S_P40;level2_s3d  void ratx4_kernel<double>double const *, double*, double*;56;92.7;0.071125;413696;0;0;1310720;4206592;4.0936837
+S_P41;level2_s3d  void ratxb_kernel<double>double const *, double const *, double*, double*, double const *, double;76;80.87;0.071077;102400;0;520192;6447104;2166784;3.7554634
+S_P42;level2_s3d  void ratxb_kernel<float>float const *, float const *, float*, float*, float const *, float;60;92.04;0.232005;286848;0;12151296;6248448;5847552;3.5333323
+S_P43;level2_s3d  void ratt2_kernel<double>double const *, double const *, double*, double const *, double;44;75.01;0.070768;60416;0;147456;745472;962560;0.6580785
+S_P44;level2_s3d  void ratt10_kernel<double>double const *, double*, double;28;72.41;0.073128;22528;0;98304;1601536;626688;0.95846534
+S_P45;level2_s3d  void ratt3_kernel<double>double const *, double const *, double*, double const *, double;64;77.87;0.071161;68608;0;172032;892928;1236992;0.68645644
+S_P46;level2_s3d  void ratx_kernel<double>double const *, double const *, double*, double*, double const *, double;54;79.62;0.071244;84992;0;651264;7544832;2375680;4.233936
+S_P47;level2_s3d  void ratt4_kernel<double>double const *, double const *, double*, double const *, double;56;76.86;0.071202;70656;0;172032;876544;1277952;0.6968242
+S_P48;level2_s3d  void ratt5_kernel<double>double const *, double const *, double*, double const *, double;56;78.42;0.071047;76800;0;188416;942080;1413120;0.79045796
+S_P49;level2_s3d  void ratt6_kernel<double>double const *, double const *, double*, double const *, double;44;79.02;0.070938;76800;0;172032;925696;1404928;0.776046
+S_P50;level2_s3d  void ratx_kernel<float>float const *, float const *, float*, float*, float const *, float;45;91.99;0.231783;245376;0;14211072;7174656;6386688;3.778229
+S_P51;level2_s3d  void ratt7_kernel<double>double const *, double const *, double*, double const *, double;52;79.35;0.070837;77824;0;204800;974848;1441792;0.81665933
+S_P52;level2_s3d  void ratt8_kernel<double>double const *, double const *, double*, double const *, double;50;79.23;0.070833;76800;0;204800;1003520;1425408;0.8224731
+S_P53;level2_s3d  void ratt9_kernel<double>double const *, double const *, double*, double const *, double;63;80.05;0.070986;88064;0;253952;1265664;1626112;0.92003345
+S_P54;level2_s3d  void qssa_kernel<double>double*, double*, double*;142;93.1;0.071396;337920;0;81920;1572864;5320704;2.2360237
